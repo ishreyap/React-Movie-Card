@@ -1,0 +1,74 @@
+.movie-card {
+    display: inline-block;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 20px;
+    width: 350px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card img {
+    width: 350px;
+    height: 300px;
+}
+
+.movie-card .movie-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.movie-card .movie-details {
+    font-size: 14px;
+    margin-top: 10px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.movie-card .movie-rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f00;
+}
+
+.movie-card .movie-release-date {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .movie-card {
+        width: 250px;
+        height: 375px;
+    }
+}
+
+.search{
+    margin-top: 10px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 16px;
+    display: inline-block;
+    transition: border-color 0.3s ease;
+}
